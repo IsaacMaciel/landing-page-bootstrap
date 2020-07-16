@@ -18,8 +18,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">fruta & fruto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand font-especial cor-especial" href="#">fruta & fruto</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -39,13 +39,19 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">receitas</a>
+            <a class="nav-link" href="#receitas">receitas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">quem somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contato</a>
+            <a
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#modalContato"
+              href="#"
+              >contato</a
+            >
           </li>
         </ul>
       </div>
@@ -73,7 +79,7 @@
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block h-50">
-            <h1 class="display-3">Reaproveite melhor os alimentos!</h1>
+            <h1 class="display-3 font-especial">Reaproveite melhor os alimentos!</h1>
           </div>
         </div>
         <div class="carousel-item">
@@ -107,59 +113,191 @@
       </a>
     </div>
 
-    <h2>Receitas para economizar e ganhar saúde</h2>
-    <h2>
+    <h1 class="text-center cor-especial font-especial pt-5">
+      Receitas para economizar e ganhar saúde
+    </h1>
+    <p class="text-center text-secondary pb-5">
       Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar,
       ganhar tempo e praticidade
-    </h2>
-
-    <img
-      src="src/img/receita-abacate.jpg"
-      alt="tigela com salada de abacate, vista superior"
-    />
-    <h3>Tigela de abacate</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <img
-      src="src/img/receita-kiwi.jpg"
-      alt="tigela de mingau com kiwi, vista superior"
-    />
-    <h3>Salada de kiwi</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <img
-      src="src/img/receita-mix.jpg"
-      alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior"
-    />
-    <h3>Mix de vegetais</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <img
-      src="src/img/receita-pimentoes.jpg"
-      alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior"
-    />
-    <h3>Pimentões à Juliana</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <img
-      src="src/img/receita-oriental.jpg"
-      alt="tigela com salada de vegetais estilo oriental, vista de cima"
-    />
-    <h3>Prato oriental</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <img
-      src="src/img/receita-beterrabas.jpg"
-      alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo"
-    />
-    <h3>Beterrabas assadas</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-
-    <p>
-      contato:<a href="mailto:email@frutafruto.com.br"
-        >email@frutafruto.com.br</a
-      >
     </p>
+    <section class="container" id="receitas">
+      <div class="row justify-content-center">
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-abacate.jpg"
+            class="card-img-top image-height"
+            alt="tigela com salada de abacate, vista superior"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Tigela de abacate</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+            <footer class="d-flex justify-content-end">
+              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-kiwi.jpg"
+            class="card-img-top image-height"
+            alt="tigela de mingau com kiwi, vista superior"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salada de kiwi</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+             <footer class="d-flex justify-content-end">
+              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-mix.jpg"
+            class="card-img-top image-height"
+            alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mix de vegetais</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+             <footer class="d-flex justify-content-end">
+              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-pimentoes.jpg"
+            class="card-img-top image-height"
+            alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pimentões à Juliana</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+             <footer class="d-flex justify-content-end">
+              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-oriental.jpg"
+            class="card-img-top image-height"
+            alt="tigela com salada de vegetais estilo oriental, vista de cima"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Prato oriental</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+             <footer class="d-flex justify-content-end">
+              <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card card-especial card-largura col-12 col-xl-4 p-0 m-4">
+          <img
+            src="src/img/receita-beterrabas.jpg"
+            class="card-img-top image-height"
+            alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Beterrabas assadas</h5>
+            <p class="card-text">
+              Receita refrescante e cheia de vitaminas para o seu café da manhã!
+            </p>
+            <a href="#" class="btn btn-cor-especial">Veja a receita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalContato"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Digite o seu nome"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputContent">Texto</label>
+                <textarea
+                  class="form-control"
+                  id="inputContent"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-cor-especial">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-secondary p-3">
+      <p class="text-light text-center m-0">
+        contato: <a class="text-light" href="mailto:email@frutafruto.com.br"
+          >email@frutafruto.com.br</a
+        >
+      </p>
+
+    </footer>
 
     <script src=""></script>
     <script

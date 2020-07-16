@@ -4,6 +4,30 @@
   object-position: 0 80%;
 }
 
-h1 {
+.font-especial {
   font-family: "Pacifico", cursive;
+}
+
+.cor-especial  {
+  color: darkred !important;
+}
+.btn-cor-especial {
+  background-color: darkred;
+  color: white;
+
+  transition: all 1s;
+}
+.btn-cor-especial:hover {
+  background-color: white;
+  color: darkred;
+}
+.card-especial {
+  border-color: darkred;
+}
+.card-largura {
+  max-width: 18rem;
+}
+.image-height {
+  height: 200px;
+  object-fit: cover;
 }
